@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #151815;
+    background-color: #F5F7F5;
+  }
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'Manrope', sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle glows with #88F78C */
+.glow-neon {
+  box-shadow: 0 0 25px -4px rgba(136, 247, 140, 0.45);
+}
+
+.glow-neon-sm {
+  box-shadow: 0 0 12px -2px rgba(136, 247, 140, 0.35);
+}
+
+.glow-neon-pulse {
+  animation: neonPulse 1.8s infinite alternate;
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 12px 1px rgba(136, 247, 140, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 28px 6px rgba(136, 247, 140, 0.65);
+  }
+}
+
+@keyframes streakBonusExplode {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+}
+
+.animate-streak-bonus {
+  animation: streakBonusExplode 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

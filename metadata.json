@@ -1,0 +1,7 @@
+{
+  "name": "REP//AI",
+  "description": "AI-powered fitness training game with real-time computer vision pose estimation, streak tracking, and interactive challenges.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
